@@ -40,3 +40,7 @@ a {
 	float: none;
 	display: inline-block;
 }
+img {
+	display: block;
+	margin: auto;
+}
