@@ -1,0 +1,42 @@
+body {
+  font-family: 'Arvo', serif;
+  font-size: 14px;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#HeaderLabel {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.navbar-nav {
+	width: 100%;
+	text-align: center;
+}
+.navbar-nav > li {
+	float: none;
+	display: inline-block;
+}
+
+.MainBody {
+	margin-top: 140px;
+	width: 1170px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.dark {
+	background-color: #555555;
+}
+
+.nav-tabs {
+	text-align: center;
+}
+
+.nav-tabs > li {
+	float: none;
+	display: inline-block;
+}

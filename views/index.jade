@@ -1,0 +1,78 @@
+extends layout
+
+block content
+	div(id='AboutMe', class=('container'))
+		div(class='container MainBody')
+		h2(align='center') About Me
+		hr(style='background-color:#ddd; height: 1px;')
+		div(class='col-md-8 about-left')
+			p
+				strong Pellentesque habitant morbi tristique
+				| senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+				em Aenean ultricies mi vitae est.
+				| Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, 
+				code commodo vitae
+				| , ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+				a(href='#') Donec non enim
+				| in turpis pulvinar facilisis. Ut felis.
+			h3 Header Level 2
+			ol
+				li Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+				li Aliquam tincidunt mauris eu risus.
+			blockquote
+				p
+				| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.
+			h4 Header Level 3
+			ul
+				li Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+				li Aliquam tincidunt mauris eu risus.
+		div(class='col-md-4 about-right')
+			img(src='/images/me.jpeg')
+	div(id='Experience' class='dark Screen container')
+		h2(align='center') Experience
+		hr(style='background-color:#ddd; height: 1px;')
+		div(class='col-md-4 about-left')
+			img(src='/images/me.jpeg')
+		div(class='col-md-8 about-right')
+			p
+				strong Pellentesque habitant morbi tristique
+				| senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.
+				em Aenean ultricies mi vitae est.
+				| Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, 
+				code commodo vitae
+				| , ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui.
+				a(href='#') Donec non enim
+				| in turpis pulvinar facilisis. Ut felis.
+			h3 Header Level 2
+			ol
+				li Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+				li Aliquam tincidunt mauris eu risus.
+			blockquote
+				p
+				| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.
+			h4 Header Level 3
+			ul
+				li Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+				li Aliquam tincidunt mauris eu risus.
+	div(id='Projects' class='Screen container')
+		h2(align='center') Projects
+		hr(style='background-color:#ddd; height: 1px;')
+		ul(class="nav nav-tabs")
+			li(class="active")
+				a(data-toggle="tab" href="#allproj") All
+			li
+				a(data-toggle="tab" href="#homeproj") Home
+			li
+				a(data-toggle="tab" href="#schoolproj") School
+			li
+				a(data-toggle='tab' href='#') Work
+		div(class="tab-content")
+			div(id="allrpoj", class="tab-pane fade in active")
+				h3 HOME
+				p Some content.
+			div(id="homeproj", class="tab-pane fade")
+				h3 Menu 1
+				p Some content in menu 1.
+			div(id="menu2", class="tab-pane fade")
+				h3 Menu 2
+				p Some content in menu 2.
