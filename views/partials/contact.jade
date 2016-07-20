@@ -1,0 +1,32 @@
+div(id='Contact', class='Screen container')
+	h2(align='center') Contact Me
+	hr(style='background-color:#ddd; height: 1px;')
+	div(style='text-align: center; margin-bottom: 15px;')
+		span Need to contact me for any reason?
+		br
+		span Go ahead and fill out your information and send me a message.
+	form
+		div(class="row",  ng-controller='FormController')
+			div(class="col-xs-6")
+				div(class="row")
+					label(class="col-xs-12") Name
+				div(class="row")
+					div(class="col-xs-12 col-sm-6")
+						input(class="form-control", type="text", placeholder='First', required, ng-model='user.firstname')
+					div(class="col-xs-12 col-sm-6")
+						input(class="form-control", type="text", placeholder='Last', required, ng-model='user.lastname')
+			div(class="col-xs-6 form-group")
+				label Email
+				input(class="form-control", type="email", placeholder='Email', required, ng-model='user.email')
+			div(class="col-xs-6 form-group")
+				label Work Phone
+				input(class="form-control", type="tel", placeholder='Work Phone', ng-model='user.workphone')
+			div(class="col-xs-6 form-group")
+				label Cell Phone
+				input(class="form-control", type="tel", placeholder='Cell Phone', ng-model='user.cellphone')
+			div(class="col-xs-12 form-group")
+				label Message
+				textarea(class="form-control", placeholder='Message', rows='5', required, ng-model='user.message')
+			div(class='col-xs-12 form-group')
+				input(type='button', value='Submit', class='btn btn-primary', style='margin-right: 15px;', ng-click='update(user)')
+				input(type='reset', value='Reset', class='btn btn-secondary')

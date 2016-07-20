@@ -1,7 +1,7 @@
-$(document).ready(function(){
-	$('.Screen').each(function(){
-		if ($(this).index() !== 0) {
-			$(this).css('margin-top', $('.Screen')[$(this).index()-1])
-		}
-	});
+var app = angular.module('app', []);
+
+app.controller('contactformcontroller', function($scope) {
+	$scope.update = function(user){
+		
+	}
 });
