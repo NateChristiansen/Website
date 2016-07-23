@@ -19,12 +19,16 @@ a {
 }
 .MainBody {
 	margin-top: 140px;
-	width: 1170px;
+	width: 1000px;
 	margin-right: auto;
 	margin-left: auto;
 }
+.container {
+	width: 1000px;
+}
 .dark {
-	background-color: #555555;
+	background-color: #222222;
+	color: #eeeeee;
 }
 .nav-tabs {
 	text-align: center;

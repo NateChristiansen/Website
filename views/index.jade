@@ -1,8 +1,13 @@
 extends layout
 
 block content
-	include partials/aboutme
-	include partials/experience
-	include partials/projects
-	include partials/knowledge
-	include partials/contact
+	div
+		include partials/aboutme
+	div(class="dark")
+		include partials/experience
+	div
+		include partials/projects
+	div(class="dark")
+		include partials/knowledge
+	div
+		include partials/contact
