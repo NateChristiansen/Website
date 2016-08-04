@@ -1,6 +1,8 @@
 body {
   font-family: 'Arvo', serif;
   font-size: 14px;
+  background-color: #00ccff;
+  color: #222222;
 }
 a {
   color: #00B7FF;
@@ -17,6 +19,17 @@ a {
 	float: none;
 	display: inline-block;
 }
+.navbar-default .navbar-nav > li > a {
+	color: #ffffff;
+}
+#Navigator {
+	background-color: #117791
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+	background: #006682;
+	transition: .5s;
+	transform: scale(.8);
+}
 .MainBody {
 	margin-top: 140px;
 	width: 1000px;
@@ -28,7 +41,11 @@ a {
 }
 .dark {
 	background-color: #222222;
-	color: #eeeeee;
+	color: #00ccff;
+}
+.section {
+	padding-top: 75px;
+	padding-bottom: 15px;
 }
 .nav-tabs {
 	text-align: center;
