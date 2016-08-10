@@ -9,22 +9,23 @@ html(ng-app='contactForm')
 		script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js')
 		script(src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js")
 		script(src='https://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular-resource.min.js')
+		script(src='http://pvdspek.github.io/downloads/jquery.autoellipsis-1.0.10.min.js')
 		script(src='javascripts/page.js')
 		script(src='javascripts/contact.js')
 	body
 		header
 			nav(class='navbar navbar-default navbar-fixed-top')
 				div(class='container-fluid', id='Navigator')
-					h1(id='HeaderLabel', align='center') Nathan Christiansen 
-					h4(align='center') (this is very work in progress, started 6/23/2016)
+					h1(id='HeaderLabel', align='center', style='color: #ffffff') Nathan Christiansen 
+					h4(align='center', style='color: #ffffff') (this is very work in progress, started 6/23/2016)
 					hr(style='margin:0; background-color:#ddd; height: 1px;')
 					ul(class='nav navbar-nav')
 						li(class='nav-item')
 							a(class='nav-link pagenav', href='#', scrolltarget="#AboutMe") Home
 						li(class='nav-item')
-							a(class='nav-link pagenav', href='#', scrolltarget="#Experience") Experience
-						li(class='nav-item')
 							a(class='nav-link pagenav', href='#', scrolltarget="#Projects") Projects
+						li(class='nav-item')
+							a(class='nav-link pagenav', href='#', scrolltarget="#Experience") Experience
 						li(class='nav-item')
 							a(class='nav-link pagenav', href='#', scrolltarget="#Knowledge") Knowledge
 						li(class='nav-item')

@@ -1,25 +1,39 @@
 div(id='Projects' class='Screen container')
 	h2(align='center') Projects
 	hr(style='background-color:#ddd; height: 1px;')
-	ul(class="nav nav-tabs")
-		li(class="active")
-			a(data-toggle="tab" href="#allproj") All
-		li
-			a(data-toggle="tab" href="#homeproj") Home
-		li
-			a(data-toggle="tab" href="#schoolproj") School
-		li
-			a(data-toggle='tab' href='#') Work
-	div(class="tab-content")
-		div(id="allrpoj", class="tab-pane fade in active")
-			div(class='tab-body')
-				h3 HOME
-				p Some content.
-		div(id="homeproj", class="tab-pane fade")
-			div(class='tab-body')
-				h3 Menu 1
-				p Some content in menu 1.
-		div(id="menu2", class="tab-pane fade")
-			div(class='tab-body')
-				h3 Menu 2
-				p Some content in menu 2.
+	div(class='col-md-6 imagewrap')
+		img(src='/images/me.jpeg', class='hoverimage')
+		div(class='image-text')
+			h3 DataMender
+			hr(style='background-color:#ddd; height: 1px; margin-top: 5px; margin-bottom: 5px')
+			span(class='projdesc') DataMender is a tool that adds a stable workflow to production level database modification, involving assigning work to developers, and confirming the changes to make sure the accomplished work was correct.  Security was a high priority, as damages to the database could be catastrophic.  SQL injection prevention, authorization and authentication, and system logging were used to make sure that the system was safe and secure.  Eventually DataMender will hopefully see implementation among the entire enterprise, as the standard for making changes to the production level databases.
+	div(class='col-md-6 imagewrap')
+		img(src='/images/me.jpeg', class='hoverimage')
+		div(class='image-text')
+			h3 Catastrophic Weather Tracker
+			hr(style='background-color:#ddd; height: 1px; margin-top: 5px; margin-bottom: 5px')
+			span(class='projdesc') Erie Insurance put on their own version of a hackathon, to have interns share their ideas and thought process to help the company think differently about how to tackle various problems.  We had a partially working prototype for a project that detect and notify home office users about catastrophic storm events, and then track the weather and notify all agents and policyholders about the pending disaster.  It would offer agents a way to accurately view all policyholders under them who are being affected by the storm, as well as give everyone the ability to view the closest CAT van, which go around and help during catastrophes.  We utilized IBM's weather api and would hopefully integrate Watson to deliver accurate results.  Our team won the award for the weather category of the event, impressing the judges with our idea and implementation. 
+	div(class='col-md-6 imagewrap')
+		img(src='/images/me.jpeg', class='hoverimage')
+		div(class='image-text')
+			h3 Macro Bar
+			hr(style='background-color:#ddd; height: 1px; margin-top: 5px; margin-bottom: 5px')
+			span(class='projdesc') The website of Erie Insurance's quoting application had some JavaScript bookmarks that were used to fill in the pages to help develop and test.  We were tasked with designing a macro bar that would be easier to distribute, construct, and integrate.  Our first iteration was a massive success, and is helping the team save hundreds of hours by giving lots of various, automatic, quick filling options for many almost all of the pages of the site.  We were in the process of creating a web api that would use databases to house the information and receive requests to get the data, and while we achieved approximately 85% of the goals set out, we ended up putting a hold on the project to work on DataMender, which was a much higher priority project.
+	div(class='col-md-6 imagewrap')
+		img(src='/images/me.jpeg', class='hoverimage')
+		div(class='image-text')
+			h3 Butterfly
+			hr(style='background-color:#ddd; height: 1px; margin-top: 5px; margin-bottom: 5px')
+			span(class='projdesc') Butterfly is a Java based music player with Twitter integration.  This was a school project designed to simulate the software application life cycle.  We created the idea for the project, worked on requirements and system design, and then implemented the designs to create a working product.  Key points of the project were recursive library management, functional and appropriate user experience, a fast searching algorithm that will search keywords among millions of songs in sub-second time, and Twitter integration to allow users to tweet about the music they were listening to at the moment.
+	div(class='col-md-6 imagewrap')
+		img(src='/images/me.jpeg', class='hoverimage')
+		div(class='image-text')
+			h3 Minesweeper
+			hr(style='background-color:#ddd; height: 1px; margin-top: 5px; margin-bottom: 5px')
+			span(class='projdesc') A recreation of minesweeper using C#, which I did for fun as well as a tutorial into the language, as I had limited knowledge of it, but needed to learn it for my internship at Erie Insurance.
+	div(class='col-md-6 imagewrap')
+		img(src='/images/me.jpeg', class='hoverimage')
+		div(class='image-text')
+			h3 Hangman
+			hr(style='background-color:#ddd; height: 1px; margin-top: 5px; margin-bottom: 5px')
+			span(class='projdesc') My first C# project, which I created very quickly in freshman year and it was pretty bad.  I had the drive to somewhat update it and make it decent, although it is still a very small and mediocre project.

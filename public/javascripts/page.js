@@ -6,4 +6,8 @@ $(document).ready(function(){
 			scrollTop: amt
 		}, 1000);
 	});
+	$('.projdesc').each(function() {
+		$(this).height($(this).parent(0).height() - $(this).parent(0).css('padding') * 2);
+		$(this).ellipsis();
+	});
 });
