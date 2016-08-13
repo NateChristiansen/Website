@@ -9,6 +9,7 @@ while [ true ]; do
 			kill $i
 		done
 		git pull
+		mv ~/share/* private
 		npm start &
 	fi
 	sleep 1
