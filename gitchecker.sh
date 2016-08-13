@@ -8,7 +8,7 @@ while [ true ]; do
 			kill $i
 		done
 		git pull
-		mv /home/nathan/share/* private > ../../share/log.txt
+		mv /home/nathan/share/* /home/nathan/Workspace/Website/private
 		npm start &
 	fi
 	sleep 1
