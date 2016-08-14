@@ -1,9 +1,12 @@
 div(id='Projects' class='Screen container', ng-app='projects', ng-controller='ProjectsController')
 	h2(align='center') Projects
 	hr(style='background-color:#ddd; height: 1px;')
-	div(class='col-md-6 imagewrap', ng-repeat='project in projects.Projects')
+	div(class='col-md-6 imagewrap', ng-repeat='project in projects.Projects', ng-click='setcurrent(project)')
 		img(ng-src='{{project.Image}}', class='hoverimage')
 		div(class='image-text')
 			h3 {{project.Name}}
 			hr(style='background-color:#ddd; height: 1px; margin-top: 5px; margin-bottom: 5px')
 			span(class='projdesc') {{project.ShortBio}}
+	div(id='ProjectModal', class='modal')
+		img(class='modal-content', id='ModalImage', ng-src='{{currentProject.Image}}')
+		div(id='ModalCaption') {{currentProject.Description}}
