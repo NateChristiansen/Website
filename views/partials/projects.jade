@@ -9,4 +9,15 @@ div(id='Projects' class='Screen container', ng-app='projects', ng-controller='Pr
 			span(class='projdesc') {{project.ShortBio}}
 	div(id='ProjectModal', class='modal')
 		img(class='modal-content', id='ModalImage', ng-src='{{currentProject.Image}}')
-		div(id='ModalCaption') {{currentProject.Description}}
+		div(id='ModalCaption') 
+			| Name: {{currentProject.Name}}
+			br 
+			| {{currentProject.DateStarted}} - {{currentProject.DateCompleted}}
+			br 
+			| Type: {{currentProject.Type}}
+			br 
+			| Link: 
+			a(ng-if='currentProject.Github', ng-href='{{currentProject.Github}}', target='_blank') Github
+			span(ng-if='!currentProject.Github') N/A
+			br 
+			| {{currentProject.Description}}
