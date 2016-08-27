@@ -20,4 +20,8 @@ div(id='Projects' class='Screen container', ng-app='projects', ng-controller='Pr
 			a(ng-if='currentProject.Github', ng-href='{{currentProject.Github}}', target='_blank') Github
 			span(ng-if='!currentProject.Github') N/A
 			br 
-			| {{currentProject.Description}}
+			| Description: {{currentProject.Description}}
+			br
+			| Gained Experience:
+			ul
+				li(ng-repeat='exp in currentProject.WhatILearned') {{exp}}
